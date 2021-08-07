@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./dist/desktop.png)
-![](./dist/mobile.png)
+<img src="/images/desktop.png" width="70%" alt="dektop-screenshot">
+<img src="/images/mobile.png" width="300" alt="mobile-screenshot">
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-float-ttBzRQT2P)
+- Live Site URL: [Live site URL here](https://fem-base-apparel-coming-soon-neon.vercel.app/)
 
 ## My process
 
