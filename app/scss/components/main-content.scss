@@ -1,0 +1,50 @@
+@use '../util' as *;
+
+.main-content {
+  margin: 0 auto;
+  margin-top: rem(65);
+  margin-bottom: rem(77);
+  padding-left: rem(32);
+  padding-right: rem(32);
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    max-width: 50%;
+    text-align: left;
+    margin: 0;
+    padding-left: rem(163);
+    padding-right: rem(163);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: rem(15);
+    line-height: 1.1;
+
+    @include breakpoint-up(large) {
+      font-size: rem(64);
+    }
+
+    .accent {
+      font-weight: 300;
+      color: var(--desaturated-red);
+    }
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    color: var(--desaturated-red);
+    font-size: rem(14);
+    line-height: 1.5;
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+
+    @include breakpoint-up(large) {
+      font-size: rem(18);
+      margin-top: rem(36);
+      margin-bottom: rem(36);
+    }
+  }
+}

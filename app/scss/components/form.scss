@@ -1,0 +1,75 @@
+@use '../util' as *;
+.form {
+  position: relative;
+  margin: rem(16) auto;
+  width: 100%;
+  height: rem(47);
+
+  &__email {
+    font-family: inherit;
+    color: var(--dark-grayish-red);
+    width: 95%;
+    height: 100%;
+    border: 1px solid var(--desaturated-red);
+    border-radius: rem(20);
+    outline: none;
+    padding-left: rem(25);
+
+    &::placeholder {
+      color: var(--desaturated-red);
+    }
+
+    &:focus {
+      border: 2px solid var(--soft-red);
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    width: rem(64);
+    height: 100%;
+    border: none;
+    background: linear-gradient(to right, var(--linear-gradient-start2), var(--linear-gradient-end2));
+    border-radius: rem(30);
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    box-shadow: 0 5px 20px 3px var(--linear-gradient-start2);
+
+    @include breakpoint-up(large) {
+      width: rem(100);
+    }
+  }
+}
+
+.form.invalid::before {
+  display: block;
+  content: "";
+  background: url("/images/icon-error.svg");
+  width: rem(24);
+  height: rem(24);
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  bottom: 0;
+
+  @include breakpoint-up(large) {
+    top: 25%;
+    left: 60%;
+    bottom: 0;
+  }
+
+  @include breakpoint-up(xlarge) {
+    top: 25%;
+    left: 67%;
+    bottom: 0;
+  }
+}
+
+.form.invalid::after {
+  display: block;
+  content: "Please provide a valid email";
+  color: var(--soft-red);
+  margin-top: rem(10);
+  padding-left: rem(25);
+}

@@ -1,0 +1,20 @@
+@use '../util' as *;
+
+.header {
+  margin-top: rem(30);
+  margin-bottom: rem(30);
+  padding-left: rem(32);
+  padding-right: rem(32);
+  display: inline-block;
+
+  @include breakpoint-up(large) {
+    margin-top: rem(64);
+    margin-bottom: rem(64);
+    padding-left: rem(163);
+    padding-right: 0;
+  }
+}
+
+.logo {
+  max-height: rem(23);
+}

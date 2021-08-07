@@ -1,0 +1,1 @@
+"use strict";var form=document.querySelector("form"),email=document.getElementById("email"),submit=document.getElementById("submit");form.addEventListener("submit",(function(e){e.preventDefault(),email.value&&!email.validity.valid?form.classList.add("invalid"):form.classList.remove("invalid")}));

@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+.hero {
+  @include breakpoint-up(large) {
+    float: right;
+    height: 100vh;
+  }
+
+  &__mobile {
+    width: 100%;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    @include breakpoint-up(large) {
+      display: block;
+      height: 100%;
+    }
+  }
+}
